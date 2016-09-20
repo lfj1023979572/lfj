@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=n0,initial-scale=1.0/">-->
+    <!--<meta name="format-detection" content="email=n0,telephone=no,data=no,address=no">-->
+    <!--<link rel="stylesheet" href="../css/aui.css">-->
+    <!--<link rel="stylesheet" href="../css/aui-iconfont.css">-->
+    <style>
+.aui-border-radius{
+    width: 37%;
+    background-color:white;
+    height: 153px;
+    position: relative;
+    z-index:100;
+    border: #e6e4e3 1px solid;
+    float: left;
+    border-right: none;
+}
+        #img{
+           width: 70px;
+            height: 70px;
+            margin-top: 25px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 60px;
+            color: white;
+            line-height: 90px;
+            margin-left: 10px;
+            background-color: silver;
+        }
+        .aui-content{
+            margin-top: 45px;
+        }
+    </style>
+</head>
+<body>
+<div class="aui-content">
+    <div class="aui-pull-left aui-border-radius">
+        <div id="img" class="aui-iconfont aui-icon-peoplefill">
+            <div class="aui-text-info" style="font-size: 15px;line-height:0px;float:left">添加照片</div>
+        </div>
+    </div>
+    <div class="aui-form" style="width: 100%;padding:0px">
+        <div class="aui-input-row" style="left: 0px">
+            <label class="aui-input-addon">姓名</label>
+            <input type="text" class="aui-input" id="input1">
+        </div>
+        <div class="aui-input-row">
+            <label class="aui-input-addon">电话</label>
+            <input class="aui-input" type="tel" >
+        </div>
+        <div class="aui-input-row">
+            <label class="aui-input-addon">QQ</label>
+            <input class="aui-input" type="text" id="add_qq">
+        </div>
+    </div>
+    <div class="aui-btn-row" style="background-color: white">
+        <div class="aui-btn aui-btn-success" id="button">确认</div>&nbsp;&nbsp;
+        <div class="aui-btn aui-btn-info" >取消</div>
+    </div>
+</div>
+
+</body>
+</html>

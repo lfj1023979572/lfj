@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<link rel="stylesheet" href="../css/aui.css">-->
+    <style>
+        .aui-content{
+            display: none;
+        }
+        #searchABC{
+            list-style-type: none;
+            position: fixed;
+            top: 70px;
+            right: 20px;
+            font-size: 15px;
+        }
+        #searchABC li{
+            margin-top: -3px;
+        }
+        #contacs{
+            width: 100%;
+            height: 100%;
+            margin-right: 0px;
+        }
+    </style>
+</head>
+<body>
+<!--搜索-->
+<div id="contacs">
+<div class="aui-searchbar-wrap demo" id="search" style="margin-top: 50px">
+    <div class="aui-searchbar aui-border-radius" tapmode onclick="doSearch()">
+        <i class="aui-iconfont aui-icon-search"></i>
+        <div class="aui-searchbar-text">请输入搜索内容</div>
+        <div class="aui-searchbar-input">
+            <form action="javascript:search();">
+                <input type="text" placeholder="请输入搜索内容" id="search-input">
+            </form>
+        </div>
+        <i class="aui-iconfont aui-icon-roundclosefill" tapmode onclick="clearInput()"></i>
+    </div>
+    <div class="aui-searchbar-cancel aui-text-info" tapmode onclick="cancelSearch()">取消</div>
+</div>
+<div id="list">
+    <div class="aui-content" date-index="A">
+        <p class="aui-padded-10">A</p>
+        <ul class="aui-list-view">
+        </ul>
+    </div>
+    <div class="aui-content" date-index="B">
+        <p class="aui-padded-10">B</p>
+        <ul class="aui-list-view">
+        </ul>
+    </div>
+    <div class="aui-content" date-index="C">
+        <p class="aui-padded-10">C</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="D">
+        <p class="aui-padded-10">D</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="E">
+        <p class="aui-padded-10">E</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="F">
+        <p class="aui-padded-10">F</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="G">
+        <p class="aui-padded-10">G</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="H">
+        <p class="aui-padded-10">H</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="I">
+        <p class="aui-padded-10">I</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="J">
+        <p class="aui-padded-10">J</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="K">
+        <p class="aui-padded-10">K</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="L">
+        <p class="aui-padded-10">L</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div><div class="aui-content" date-index="M">
+    <p class="aui-padded-10">N</p>
+    <ul class="aui-list-view">
+
+    </ul>
+</div><div class="aui-content" date-index="N">
+    <p class="aui-padded-10">N</p>
+    <ul class="aui-list-view">
+
+    </ul>
+</div><div class="aui-content" date-index="O">
+    <p class="aui-padded-10">O</p>
+    <ul class="aui-list-view">
+
+    </ul>
+</div>
+    <div class="aui-content" date-index="P">
+        <p class="aui-padded-10">P</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="Q">
+        <p class="aui-padded-10">Q</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="R">
+        <p class="aui-padded-10">R</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="S">
+        <p class="aui-padded-10">S</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="T">
+        <p class="aui-padded-10">T</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="U">
+        <p class="aui-padded-10">U</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="V">
+        <p class="aui-padded-10">V</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="W">
+        <p class="aui-padded-10">W</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="X">
+        <p class="aui-padded-10">X</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="Y">
+        <p class="aui-padded-10">Y</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-index="Z">
+        <p class="aui-padded-10">Z</p>
+        <ul class="aui-list-view">
+
+        </ul>
+    </div>
+    <div class="aui-content" date-value="*">
+        <ul class="aui-list-view">
+        </ul>
+    </div>
+</div>
+<ul id="searchABC">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+    <li>F</li>
+    <li>J</li>
+    <li>H</li>
+    <li>I</li>
+    <li>J</li>
+    <li>K</li>
+    <li>L</li>
+    <li>M</li>
+    <li>N</li>
+    <li>O</li>
+    <li>P</li>
+    <li>Q</li>
+    <li>R</li>
+    <li>S</li>
+    <li>T</li>
+    <li>U</li>
+    <li>V</li>
+    <li>W</li>
+    <li>X</li>
+    <li>Y</li>
+    <li>Z</li>
+</ul>
+</div>
+</body>
+</html>

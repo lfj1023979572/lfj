@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #header1{
+            background-color: #8e92d4;
+        }
+        #right{
+            width: auto;
+            height: 45px;
+            right: 0px;
+          /*border: black 1px solid;*/
+        }
+      #header1 p{
+          float: left;
+          margin-left: 0;
+          font-size: 13px;
+          color: white;
+          width: 30px;
+          /*border: red 1px solid;*/
+      }
+#cancel,#preservation{
+    display: none;
+}
+        #edit{
+           margin-left: 50%;
+        }
+        #ul input{
+            /*display: none;*/
+            border: red 1px solid;
+        }
+    </style>
+</head>
+<body>
+<header class="aui-bar aui-bar-nav aui-bar-danger" id="header1">
+    <a class="aui-pull-left"><span class="aui-iconfont aui-icon-left"></span></a>
+    <div class="aui-title" style="font-weight: bold;font-size: 17px">联系人详情</div>
+    <div id="right" class="aui-pull-right">
+    <p id="cancel">取消</p>
+    <p id="edit">编辑</p>
+    <p id="preservation">保存</p>
+    </div>
+</header>
+<ul class="aui-list-view" style="margin-bottom: 0px" id="ul">
+    <li class="aui-user-view-cell aui-img" style="">
+        <div class="aui-swipe-handle">
+            <div class="" style="width: 70%;height: 50px;line-height: 50px;color:#AAAAAA;float: left">
+                <input type="text" id="name" class="aui-input" style="border: none;">
+            </div>
+        </div>
+    </li>
+    <li class="aui-user-view-cell aui-img">
+        <div class="telephone">
+            <span style="color:#AAAAAA">手机</span><br>
+            <input type="tel" id="telephone"  style="border: none;margin-top: 10px;color:#AAAAAA">
+            <!--<p style="border: none;display: inline-block" ></p>-->
+            <div class="aui-pull-right" style="font-size: 20px">
+                <span class="aui-iconfont aui-icon-command aui-text-info"></span>
+                <span class="aui-iconfont aui-icon-phone aui-text-info"></span>
+            </div>
+        </div>
+    </li>
+
+    <li class="aui-list-view-cell" style="color: #AAAAAA;">
+        QQ:<input type="text" id="qq" class="aui-input" style="border: none">
+    </li>
+</ul>
+</body>
+</html>
